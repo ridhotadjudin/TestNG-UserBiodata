@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222253.png'/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222258.png'/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222303.png'/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222309.png'/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222314.png'/>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-06-14T22:22:41 ICT" name="Default suite" finished-at="2022-06-14T22:23:14 ICT" duration-ms="32976">
+    <groups>
+    </groups>
+    <test started-at="2022-06-14T22:22:41 ICT" name="Default test" finished-at="2022-06-14T22:23:14 ICT" duration-ms="32976">
+      <class name="com.ridhotadjudin.testuser.CRUDUserTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:22:41 ICT" name="init" finished-at="2022-06-14T22:22:44 ICT" duration-ms="3236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="login()[pri:0, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:22:44 ICT" name="login" finished-at="2022-06-14T22:22:47 ICT" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="cobaDulu(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:22:47 ICT" name="cobaDulu" data-provider="getUserData" finished-at="2022-06-14T22:22:53 ICT" duration-ms="5675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Palu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[buayapalu@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222253.png'/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cobaDulu -->
+        <test-method signature="cobaDulu(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:22:53 ICT" name="cobaDulu" data-provider="getUserData" finished-at="2022-06-14T22:22:58 ICT" duration-ms="4991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Britni]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Warland]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bwarland0@over-blog.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222258.png'/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cobaDulu -->
+        <test-method signature="cobaDulu(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:22:58 ICT" name="cobaDulu" data-provider="getUserData" finished-at="2022-06-14T22:23:03 ICT" duration-ms="5323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ravid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Spinnace]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rspinnace1@umich.edu]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222303.png'/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cobaDulu -->
+        <test-method signature="cobaDulu(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:23:03 ICT" name="cobaDulu" data-provider="getUserData" finished-at="2022-06-14T22:23:09 ICT" duration-ms="5158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hymie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tetsall]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[htetsall2@hhs.gov]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222309.png'/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cobaDulu -->
+        <test-method signature="cobaDulu(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ridhotadjudin.testuser.CRUDUserTest@52719fb6]" started-at="2022-06-14T22:23:09 ICT" name="cobaDulu" data-provider="getUserData" finished-at="2022-06-14T22:23:14 ICT" duration-ms="5141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ellsworth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[O'Hickee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eohickee3@blogtalkradio.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\selenium-workspace\TestNG_User\hasilScreenshoot\20220614_222314.png'/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cobaDulu -->
+      </class> <!-- com.ridhotadjudin.testuser.CRUDUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
