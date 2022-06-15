@@ -24,7 +24,7 @@ public class CRUDUserTest {
 
 	WebDriver driver;
 	JavascriptExecutor javascriptExe;
-
+	
 	public String screenShoot() {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String waktu = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
@@ -36,6 +36,14 @@ public class CRUDUserTest {
 			e.printStackTrace();
 		}
 		return namaFile;
+	}
+	
+	public void sleep(int inInt) {
+		try {
+			Thread.sleep(inInt);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@BeforeClass
@@ -50,50 +58,44 @@ public class CRUDUserTest {
 
 	@Test(priority = 0)
 	public void login() {
+		//dashboard
 		driver.findElement(By.cssSelector("i.fa.fa-sign-in")).click();
+		
+		//login
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("ridhotadjudin@gmail.com");
 		driver.findElement(By.cssSelector("input[placeholder='Password']")).clear();
 		driver.findElement(By.cssSelector("input[placeholder='Password']")).sendKeys("123456");
 		driver.findElement(By.cssSelector("button[type='submit']")).click();
-		String username = driver.findElement(By.cssSelector("span[class='hidden-xs']")).getText();
-		AssertJUnit.assertEquals(username, "Ridho");
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		sleep(1000);
 	}
 
 	@Test(priority = 1, dataProvider = "getUserData", dataProviderClass = com.ridhotadjudin.dataprovider.DataProviderUser.class)
 	public void cobaDulu(String param1, String param2, String param3, String param4) {
+		//navigate to crud
 		driver.get("http://localhost/cicool/administrator/crud");
+		
+		//select destination table
 		driver.findElement(By.cssSelector("tbody tr:nth-child(2) td:nth-child(5) a:nth-child(1)")).click();
+		
+		//add new
 		driver.findElement(By.cssSelector("#btn_add_new")).click();
-
 		driver.findElement(By.xpath("//input[@placeholder='First Name']")).clear();
 		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys(param1);
-
 		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).clear();
 		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys(param2);
-
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).clear();
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys(param3);
-
 		driver.findElement(By.xpath("//input[@placeholder='Gender']")).clear();
 		driver.findElement(By.xpath("//input[@placeholder='Gender']")).sendKeys(param4);
-
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
+		sleep(500);
+		
+		//upload image
 		WebElement upGambar = driver.findElement(By.cssSelector("input[title='file input']"));
-
+		
+		//select random image
 		Random r = new Random();
-		int result = r.nextInt(4 - 1) + 1;
-		switch (result) {
+		switch (r.nextInt(4 - 1) + 1) {
 		case 1:
 			upGambar.sendKeys("D:\\selenium-workspace\\TestNG_User\\src\\test\\resources\\buayapalu.jpg");
 			break;
@@ -104,28 +106,21 @@ public class CRUDUserTest {
 			upGambar.sendKeys("D:\\selenium-workspace\\TestNG_User\\src\\test\\resources\\nexsoft.jpg");
 			break;
 		default:
-			upGambar.sendKeys("D:\\selenium-workspace\\TestNG_User\\src\\test\\resources\\nexsoft.jpg");
 			break;
 		}
-
+		
+		//scroll bottom
 		javascriptExe.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
+		sleep(500);
+		
+		//save
 		driver.findElement(By.cssSelector("#btn_save")).click();
-
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
+		sleep(500);
+		
+		//look at table userbiodata
 		driver.get("http://localhost/cicool/administrator/userbiodata");
-
+		
+		//take screenshoot
 		String file = "<img src='file://" + screenShoot() + "'/>";
 		Reporter.log(file);
 
